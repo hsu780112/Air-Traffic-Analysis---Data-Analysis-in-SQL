@@ -4,6 +4,9 @@ This project aims to support investment decisions for BrainStation Mutual Fundâ€
 Alongside generating meaningful insights, this analysis will demonstrate advanced SQL skills, showcasing efficient data handling, querying, and analysis. This report will balance practical business implications with technical rigor, ensuring both the fund managers' informational needs and assessment criteria are met.
 
 ## Data Description
+We have been provided with a cleaned version of data originally sourced from the open data portal at the Bureau of Transportation Statistics:
+https://www.transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD&DB_URL=
+
 The database contains two tables, flights and airports. The flights table contains flight data for 2018 and 2019 from the three most traveled airlines. The airports table contains data for all origin and destination airports, including full name and location. Details of each are as follows:
 
 Table 1: flights
