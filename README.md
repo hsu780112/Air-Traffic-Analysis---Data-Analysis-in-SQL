@@ -6,6 +6,7 @@ Alongside generating meaningful insights, this analysis will demonstrate advance
 ## Data Description
 We have been provided with a cleaned version of data originally sourced from the open data portal at the Bureau of Transportation Statistics:
 https://www.transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD&DB_URL=
+To load the necessary data required for this project, we downloaded the data file from https://api.brainstation.io/content/link/1HyDA2lldNXHAu5nJLPY3Y1yBAt8n7zrR?instanceId=6208 and follow the below steps: in MySQL Workbench, go to Server > Data Import, select 'Import from Self-Contained File', and specify 'AirTraffic' as the 'Default Target Schema'. 
 
 The database contains two tables, flights and airports. The flights table contains flight data for 2018 and 2019 from the three most traveled airlines. The airports table contains data for all origin and destination airports, including full name and location. Details of each are as follows:
 
