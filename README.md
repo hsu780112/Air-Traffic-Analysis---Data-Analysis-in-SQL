@@ -13,14 +13,32 @@ The database contains two tables, flights and airports. The flights table contai
 
 Table 1: flights
 
-| **Project Component**              | **Description**                                                                                                                                                  |
-|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Objective                      | Support investment decisions for BrainStation Mutual Fund in one of three major airline stocks.                                                                  |
-| Data Sources                   | Flight and airport data                                                                                                                                            |
-| Goals                          | 1. Address business questions to uncover insights on airline performance, efficiency, and operational strengths. <br> 2. Demonstrate advanced SQL skills.       |
-| Deliverables                   | Clear, data-backed insights to inform fund managers' investment choices; demonstration of SQL proficiency.                                                        |
-| Approach                       | Analyze data using SQL queries to extract actionable insights, answering the fund managers' business questions and ensuring high data handling proficiency.        |
-| Expected Outcomes              | 1. Insightful guidance on each airline's performance and strengths. <br> 2. A demonstration of technical rigor and SQL expertise.                                 |
+| **Column**                         | **Type**    | **Description**                                          |
+|--------------------------------|--------|------------------------------------------------------|
+| FlightID                      | int    | Unique ID number for each flight (Primary Key)      |
+| FlightDate                    | date   | Date of flight departure                            |
+| ReportingAirline              | string | DOT Unique Carrier Code                            |
+| TailNumber                    | string | FAA Tail number identifying flight                 |
+| FlightNumberReportingAirline  | string | Public flight number                               |
+| OriginAirportID               | int    | Origin / departure airport code                   |
+| DestAirportID                 | int    | Destination / arrival airport code                |
+| CRSDepTime                    | string | Scheduled local departure time                    |
+| DepTime                       | string | Actual local departure time                       |
+| DepDelay                      | int    | Difference in minutes between scheduled and actual departure time |
+| TaxiOut                       | int    | Taxi out time, in minutes                         |
+| WheelsOff                     | string | Wheels off in local time                         |
+| WheelsOn                      | string | Wheels on in local time                          |
+| TaxiIn                        | int    | Taxi in time, in minutes                         |
+| CRSArrTime                    | string | Scheduled arrival time                           |
+| ArrTime                       | string | Actual arrival time                              |
+| ArrDelay                      | int    | Difference in minutes between scheduled and actual arrival |
+| Cancelled                     | int    | Cancelled indicator                              |
+| Diverted                      | int    | Diverted indicator                               |
+| AirTime                       | int    | Flight time (total time in the air) in minutes  |
+| Distance                      | float  | Distance between airports in miles              |
+| AirlineName                   | string | DOT full airline name                           |
+| CancellationReason            | string | Reason for cancellation                         |
+
 
 Table 2: airports
 
